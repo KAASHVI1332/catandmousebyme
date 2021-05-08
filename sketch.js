@@ -60,14 +60,7 @@ function setup(){
 
     cat.scale = 0.16;
 
-   // mouse.debug = true;
-
-   // cat.debug = true;
-    
-      /*&& mouse.x - cat.x < cat.width/2 + mouse.width/2
-      && mouse.y - cat.y < cat.height/2 + mouse.height/2
-      && cat.y - mouse.y <cat.height/2 + mouse.height/2 90 130 */
-
+   
 
 }
 
@@ -101,9 +94,9 @@ function keyPressed(){
     cat.velocityX = -3;
 
     cat.changeAnimation("cat2,cat3",catWalk);
-
+cat.frameDelay=20;
     mouse.changeAnimation("mouse2,mouse3",mouseDance);
-
+mouse.frameDelay=20;
     
 
 
